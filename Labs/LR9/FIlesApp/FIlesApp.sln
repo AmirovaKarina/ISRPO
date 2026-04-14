@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIlesApp", "FIlesApp\FIlesApp.csproj", "{1E6735F2-BB58-4C00-BD18-A7E37013EFBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E6735F2-BB58-4C00-BD18-A7E37013EFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6735F2-BB58-4C00-BD18-A7E37013EFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6735F2-BB58-4C00-BD18-A7E37013EFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6735F2-BB58-4C00-BD18-A7E37013EFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {652CD6F8-2673-432F-B936-6EDB4AE7FD51}
+	EndGlobalSection
+EndGlobal
