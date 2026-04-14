@@ -1,0 +1,688 @@
+[DEBUG] 15:33:18.887: Проверка подключения к базе данных...
+[DEBUG] 15:33:26.289: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:33:26.348: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:33:26.353: Проверка подключения к базе данных...
+[DEBUG] 15:33:26.383: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:33:26.386: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:35:40.553: Проверка подключения к базе данных...
+[DEBUG] 15:35:51.274: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:35:51.371: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:35:51.381: Проверка подключения к базе данных...
+[DEBUG] 15:35:51.415: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:35:51.418: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:35:52.723: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:35:52.733: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:35:52.869: Ошибка загрузки данных: Подключение к серверу успешно установлено, но затем произошла ошибка при входе. (provider: Поставщик SSL, error: 0 - Цепочка сертификатов выпущена центром сертификации, не имеющим доверия.)
+[DEBUG] 15:36:03.645: Ошибка в btnShowData_Click: Подключение к серверу успешно установлено, но затем произошла ошибка при входе. (provider: Поставщик SSL, error: 0 - Цепочка сертификатов выпущена центром сертификации, не имеющим доверия.)
+[DEBUG] 15:36:03.648: Операция 'Загрузка и отображение исходных данных' завершена за 10924 мс
+[DEBUG] 15:38:14.606: Проверка подключения к базе данных...
+[DEBUG] 15:38:25.274: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:38:25.309: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:38:25.313: Проверка подключения к базе данных...
+[DEBUG] 15:38:25.352: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:38:25.394: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:38:26.774: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:38:26.786: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:38:26.928: Загружены предметы из БД:
+[DEBUG] 15:38:26.932:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:38:26.935:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:38:26.937:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:38:26.941:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:38:26.947:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:38:26.972: Отображено 5 предметов
+[DEBUG] 15:38:26.978: Операция 'Загрузка и отображение исходных данных' завершена за 204 мс
+[DEBUG] 15:40:37.388: Проверка подключения к базе данных...
+[DEBUG] 15:40:47.942: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:40:48.002: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:40:48.008: Проверка подключения к базе данных...
+[DEBUG] 15:40:48.040: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:40:48.044: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:40:49.306: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:49.319: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:49.404: Загружены предметы из БД:
+[DEBUG] 15:40:49.408:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:49.413:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:49.417:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:49.419:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:49.422:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:49.435: Отображено 5 предметов
+[DEBUG] 15:40:49.440: Операция 'Загрузка и отображение исходных данных' завершена за 133 мс
+[DEBUG] 15:40:51.150: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:51.154: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:51.163: Загружены предметы из БД:
+[DEBUG] 15:40:51.167:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:51.171:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:51.178:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:51.180:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:51.182:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:51.192: Отображено 5 предметов
+[DEBUG] 15:40:51.197: Операция 'Загрузка и отображение исходных данных' завершена за 47 мс
+[DEBUG] 15:40:51.559: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:51.562: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:51.566: Загружены предметы из БД:
+[DEBUG] 15:40:51.569:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:51.574:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:51.578:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:51.580:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:51.583:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:51.587: Отображено 5 предметов
+[DEBUG] 15:40:51.593: Операция 'Загрузка и отображение исходных данных' завершена за 33 мс
+[DEBUG] 15:40:51.718: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:51.724: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:51.728: Загружены предметы из БД:
+[DEBUG] 15:40:51.730:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:51.733:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:51.735:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:51.737:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:51.742:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:51.747: Отображено 5 предметов
+[DEBUG] 15:40:51.750: Операция 'Загрузка и отображение исходных данных' завершена за 31 мс
+[DEBUG] 15:40:51.879: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:51.884: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:51.888: Загружены предметы из БД:
+[DEBUG] 15:40:51.894:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:51.897:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:51.900:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:51.903:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:51.911:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:51.917: Отображено 5 предметов
+[DEBUG] 15:40:51.921: Операция 'Загрузка и отображение исходных данных' завершена за 42 мс
+[DEBUG] 15:40:52.038: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:52.044: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:52.048: Загружены предметы из БД:
+[DEBUG] 15:40:52.051:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:52.055:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:52.062:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:52.065:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:52.067:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:52.070: Отображено 5 предметов
+[DEBUG] 15:40:52.074: Операция 'Загрузка и отображение исходных данных' завершена за 35 мс
+[DEBUG] 15:40:52.190: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:52.194: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:52.198: Загружены предметы из БД:
+[DEBUG] 15:40:52.200:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:52.203:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:52.207:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:52.213:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:52.215:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:52.218: Отображено 5 предметов
+[DEBUG] 15:40:52.221: Операция 'Загрузка и отображение исходных данных' завершена за 31 мс
+[DEBUG] 15:40:52.342: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:52.347: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:52.351: Загружены предметы из БД:
+[DEBUG] 15:40:52.354:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:52.357:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:52.361:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:52.364:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:52.367:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:52.370: Отображено 5 предметов
+[DEBUG] 15:40:52.375: Операция 'Загрузка и отображение исходных данных' завершена за 32 мс
+[DEBUG] 15:40:52.495: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:52.520: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:52.526: Загружены предметы из БД:
+[DEBUG] 15:40:52.531:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:52.534:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:52.538:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:52.542:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:52.547:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:52.552: Отображено 5 предметов
+[DEBUG] 15:40:52.555: Операция 'Загрузка и отображение исходных данных' завершена за 60 мс
+[DEBUG] 15:40:52.638: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:52.641: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:52.647: Загружены предметы из БД:
+[DEBUG] 15:40:52.651:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:52.654:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:52.658:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:52.663:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:52.666:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:52.670: Отображено 5 предметов
+[DEBUG] 15:40:52.675: Операция 'Загрузка и отображение исходных данных' завершена за 37 мс
+[DEBUG] 15:40:52.774: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:52.814: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:52.818: Загружены предметы из БД:
+[DEBUG] 15:40:52.822:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:52.826:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:52.831:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:52.835:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:52.839:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:52.846: Отображено 5 предметов
+[DEBUG] 15:40:52.850: Операция 'Загрузка и отображение исходных данных' завершена за 76 мс
+[DEBUG] 15:40:53.087: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:53.092: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:53.097: Загружены предметы из БД:
+[DEBUG] 15:40:53.102:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:53.107:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:53.110:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:53.116:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:53.120:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:53.126: Отображено 5 предметов
+[DEBUG] 15:40:53.133: Операция 'Загрузка и отображение исходных данных' завершена за 45 мс
+[DEBUG] 15:40:53.374: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:53.377: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:53.380: Загружены предметы из БД:
+[DEBUG] 15:40:53.385:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:53.390:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:53.392:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:53.396:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:53.402:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:53.406: Отображено 5 предметов
+[DEBUG] 15:40:53.410: Операция 'Загрузка и отображение исходных данных' завершена за 36 мс
+[DEBUG] 15:40:53.662: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:53.666: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:53.672: Загружены предметы из БД:
+[DEBUG] 15:40:53.676:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:53.679:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:53.683:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:53.689:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:53.692:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:53.698: Отображено 5 предметов
+[DEBUG] 15:40:53.704: Операция 'Загрузка и отображение исходных данных' завершена за 41 мс
+[DEBUG] 15:40:53.911: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:40:53.915: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:40:53.922: Загружены предметы из БД:
+[DEBUG] 15:40:53.925:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:40:53.928:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:40:53.931:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:40:53.934:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:40:53.939:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:40:53.944: Отображено 5 предметов
+[DEBUG] 15:40:53.947: Операция 'Загрузка и отображение исходных данных' завершена за 35 мс
+[DEBUG] 15:42:46.729: Проверка подключения к базе данных...
+[DEBUG] 15:42:57.357: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:42:57.395: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:42:57.402: Проверка подключения к базе данных...
+[DEBUG] 15:42:57.427: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 15:42:57.429: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 15:42:59.523: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 15:42:59.532: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 15:42:59.618: Загружены предметы из БД:
+[DEBUG] 15:42:59.624:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:42:59.633:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:42:59.643:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:42:59.648:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:42:59.652:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:42:59.669: Отображено 5 предметов
+[DEBUG] 15:42:59.675: Операция 'Загрузка и отображение исходных данных' завершена за 152 мс
+[DEBUG] 15:43:12.359: Начало операции: Решение задачи о рюкзаке (вес до 3)
+[DEBUG] 15:43:12.366: Оптимальное решение найдено: стоимость = 40600, вес = 3
+[DEBUG] 15:43:12.369: Оптимальный набор:
+[DEBUG] 15:43:12.373:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:43:12.379:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:43:12.382: Решение найдено, количество предметов: 2
+[DEBUG] 15:43:12.385: Операция 'Решение задачи о рюкзаке (вес до 3)' завершена за 25 мс
+[DEBUG] 15:43:18.970: Начало операции: Решение задачи о рюкзаке (вес до 8)
+[DEBUG] 15:43:18.973: Оптимальное решение найдено: стоимость = 46500, вес = 8
+[DEBUG] 15:43:18.976: Оптимальный набор:
+[DEBUG] 15:43:18.979:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:43:18.985:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:43:18.989:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:43:18.993: Решение найдено, количество предметов: 3
+[DEBUG] 15:43:18.996: Операция 'Решение задачи о рюкзаке (вес до 8)' завершена за 26 мс
+[DEBUG] 15:43:21.470: Начало операции: Решение задачи о рюкзаке (вес до 12)
+[DEBUG] 15:43:21.474: Оптимальное решение найдено: стоимость = 47600, вес = 10
+[DEBUG] 15:43:21.479: Оптимальный набор:
+[DEBUG] 15:43:21.484:   - Книга: вес 1, стоимость 600
+[DEBUG] 15:43:21.488:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 15:43:21.492:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 15:43:21.496:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 15:43:21.500:   - Котелок: вес 1, стоимость 500
+[DEBUG] 15:43:21.505: Решение найдено, количество предметов: 5
+[DEBUG] 15:43:21.508: Операция 'Решение задачи о рюкзаке (вес до 12)' завершена за 38 мс
+[DEBUG] 13:22:25.306: Проверка подключения к базе данных...
+[DEBUG] 13:22:38.437: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 13:22:38.510: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 13:22:38.518: Проверка подключения к базе данных...
+[DEBUG] 13:22:38.543: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 13:22:38.547: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 13:22:46.835: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 13:22:46.844: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 13:22:46.929: Загружены предметы из БД:
+[DEBUG] 13:22:46.933:   - Книга: вес 1, стоимость 600
+[DEBUG] 13:22:46.936:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 13:22:46.940:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 13:22:46.943:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 13:22:46.945:   - Котелок: вес 1, стоимость 500
+[DEBUG] 13:22:46.952: Отображено 5 предметов
+[DEBUG] 13:22:46.955: Операция 'Загрузка и отображение исходных данных' завершена за 119 мс
+[DEBUG] 13:22:51.098: Начало операции: Решение задачи о рюкзаке (вес до 2)
+[DEBUG] 13:22:51.107: Оптимальное решение найдено: стоимость = 40000, вес = 2
+[DEBUG] 13:22:51.111: Оптимальный набор:
+[DEBUG] 13:22:51.117:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 13:22:51.123: Решение найдено, количество предметов: 1
+[DEBUG] 13:22:51.126: Операция 'Решение задачи о рюкзаке (вес до 2)' завершена за 27 мс
+[DEBUG] 13:22:54.481: Начало операции: Решение задачи о рюкзаке (вес до 2342342)
+[DEBUG] 13:22:54.486: Оптимальное решение найдено: стоимость = 47600, вес = 10
+[DEBUG] 13:22:54.490: Оптимальный набор:
+[DEBUG] 13:22:54.494:   - Книга: вес 1, стоимость 600
+[DEBUG] 13:22:54.498:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 13:22:54.503:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 13:22:54.506:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 13:22:54.511:   - Котелок: вес 1, стоимость 500
+[DEBUG] 13:22:54.515: Решение найдено, количество предметов: 5
+[DEBUG] 13:22:54.519: Операция 'Решение задачи о рюкзаке (вес до 2342342)' завершена за 37 мс
+[DEBUG] 13:23:00.953: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 13:23:00.960: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 13:23:00.969: Загружены предметы из БД:
+[DEBUG] 13:23:00.973:   - Книга: вес 1, стоимость 600
+[DEBUG] 13:23:00.977:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 13:23:00.981:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 13:23:00.986:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 13:23:00.991:   - Котелок: вес 1, стоимость 500
+[DEBUG] 13:23:00.995: Отображено 5 предметов
+[DEBUG] 13:23:00.999: Операция 'Загрузка и отображение исходных данных' завершена за 45 мс
+[DEBUG] 13:23:04.837: Начало операции: Решение задачи о рюкзаке (вес до 1)
+[DEBUG] 13:23:04.841: Оптимальное решение найдено: стоимость = 600, вес = 1
+[DEBUG] 13:23:04.845: Оптимальный набор:
+[DEBUG] 13:23:04.849:   - Книга: вес 1, стоимость 600
+[DEBUG] 13:23:04.854: Решение найдено, количество предметов: 1
+[DEBUG] 13:23:04.858: Операция 'Решение задачи о рюкзаке (вес до 1)' завершена за 21 мс
+[DEBUG] 13:23:07.705: Начало операции: Решение задачи о рюкзаке (вес до 8)
+[DEBUG] 13:23:07.709: Оптимальное решение найдено: стоимость = 46500, вес = 8
+[DEBUG] 13:23:07.714: Оптимальный набор:
+[DEBUG] 13:23:07.718:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 13:23:07.722:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 13:23:07.724:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 13:23:07.728: Решение найдено, количество предметов: 3
+[DEBUG] 13:23:07.733: Операция 'Решение задачи о рюкзаке (вес до 8)' завершена за 27 мс
+[DEBUG] 14:16:15.801: Проверка подключения к базе данных...
+[DEBUG] 14:16:29.406: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 14:16:29.474: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 14:16:29.484: Проверка подключения к базе данных...
+[DEBUG] 14:16:29.527: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 14:16:29.531: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 14:16:32.103: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 14:16:32.122: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 14:16:32.239: Загружены предметы из БД:
+[DEBUG] 14:16:32.244:   - Книга: вес 1, стоимость 600
+[DEBUG] 14:16:32.247:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 14:16:32.252:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 14:16:32.255:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 14:16:32.259:   - Котелок: вес 1, стоимость 500
+[DEBUG] 14:16:32.269: Отображено 5 предметов
+[DEBUG] 14:16:32.274: Операция 'Загрузка и отображение исходных данных' завершена за 170 мс
+[DEBUG] 14:17:39.054: Начало операции: Решение задачи о рюкзаке (вес до 2)
+[DEBUG] 14:17:39.063: Оптимальное решение найдено: стоимость = 40000, вес = 2
+[DEBUG] 14:17:39.067: Оптимальный набор:
+[DEBUG] 14:17:39.072:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 14:17:39.079: Решение найдено, количество предметов: 1
+[DEBUG] 14:17:39.085: Операция 'Решение задачи о рюкзаке (вес до 2)' завершена за 30 мс
+[DEBUG] 14:17:44.063: Начало операции: Решение задачи о рюкзаке (вес до 4)
+[DEBUG] 14:17:44.068: Оптимальное решение найдено: стоимость = 45000, вес = 4
+[DEBUG] 14:17:44.073: Оптимальный набор:
+[DEBUG] 14:17:44.079:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 14:17:44.084:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 14:17:44.091: Решение найдено, количество предметов: 2
+[DEBUG] 14:17:44.097: Операция 'Решение задачи о рюкзаке (вес до 4)' завершена за 34 мс
+[DEBUG] 14:17:48.526: Начало операции: Решение задачи о рюкзаке (вес до 6)
+[DEBUG] 14:17:48.530: Оптимальное решение найдено: стоимость = 46100, вес = 6
+[DEBUG] 14:17:48.534: Оптимальный набор:
+[DEBUG] 14:17:48.538:   - Книга: вес 1, стоимость 600
+[DEBUG] 14:17:48.543:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 14:17:48.547:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 14:17:48.551:   - Котелок: вес 1, стоимость 500
+[DEBUG] 14:17:48.558: Решение найдено, количество предметов: 4
+[DEBUG] 14:17:48.563: Операция 'Решение задачи о рюкзаке (вес до 6)' завершена за 36 мс
+[DEBUG] 19:08:20.794: Проверка подключения к базе данных...
+[DEBUG] 19:08:34.704: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 19:08:34.775: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 19:08:34.782: Проверка подключения к базе данных...
+[DEBUG] 19:08:34.815: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 19:08:34.819: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 19:08:37.559: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 19:08:37.574: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 19:08:37.697: Загружены предметы из БД:
+[DEBUG] 19:08:37.704:   - Книга: вес 1, стоимость 600
+[DEBUG] 19:08:37.709:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 19:08:37.713:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 19:08:37.717:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 19:08:37.722:   - Котелок: вес 1, стоимость 500
+[DEBUG] 19:08:37.741: Отображено 5 предметов
+[DEBUG] 19:08:37.747: Операция 'Загрузка и отображение исходных данных' завершена за 187 мс
+[DEBUG] 19:10:08.005: Начало операции: Решение задачи о рюкзаке (вес до 2)
+[DEBUG] 19:10:08.044: Оптимальное решение найдено: стоимость = 40000, вес = 2
+[DEBUG] 19:10:08.048: Оптимальный набор:
+[DEBUG] 19:10:08.052:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 19:10:08.061: Решение найдено, количество предметов: 1
+[DEBUG] 19:10:08.068: Операция 'Решение задачи о рюкзаке (вес до 2)' завершена за 62 мс
+[DEBUG] 19:10:13.412: Начало операции: Решение задачи о рюкзаке (вес до 4)
+[DEBUG] 19:10:13.416: Оптимальное решение найдено: стоимость = 45000, вес = 4
+[DEBUG] 19:10:13.419: Оптимальный набор:
+[DEBUG] 19:10:13.425:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 19:10:13.428:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 19:10:13.433: Решение найдено, количество предметов: 2
+[DEBUG] 19:10:13.437: Операция 'Решение задачи о рюкзаке (вес до 4)' завершена за 24 мс
+[DEBUG] 19:36:40.914: Проверка подключения к базе данных...
+[DEBUG] 19:36:52.474: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 19:36:52.513: Stack trace:    at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, DbConnectionPoolGroupProviderInfo providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback, SspiContextProvider sspiContextProvider)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreatePooledConnection(DbConnection owningConnection, IDbConnectionPool pool, DbConnectionPoolKey poolKey, DbConnectionOptions options, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 19:36:52.517: Проверка подключения к базе данных...
+[DEBUG] 19:36:52.531: Ошибка подключения к БД: Cannot open database "backpack" requested by the login. The login failed.
+Login failed for user 'WIN-07GTU19UB60\www'.
+[DEBUG] 19:36:52.533: Stack trace:    at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, SqlConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at TestApp.Database.DatabaseTester.TestConnection() in C:\Users\www\Desktop\шарага\ИСРПО\лабы\Labs\LR8\TestApp\TestApp\Database\DatabaseTester.cs:line 24
+[DEBUG] 19:36:55.143: Начало операции: Загрузка и отображение исходных данных
+[DEBUG] 19:36:55.151: [SQL] SELECT Id, Name, Weight, Cost FROM objects
+[DEBUG] 19:36:55.207: Загружены предметы из БД:
+[DEBUG] 19:36:55.210:   - Книга: вес 1, стоимость 600
+[DEBUG] 19:36:55.212:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 19:36:55.214:   - Аптечка: вес 4, стоимость 1500
+[DEBUG] 19:36:55.216:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 19:36:55.217:   - Котелок: вес 1, стоимость 500
+[DEBUG] 19:36:55.223: Отображено 5 предметов
+[DEBUG] 19:36:55.225: Операция 'Загрузка и отображение исходных данных' завершена за 81 мс
+[DEBUG] 19:37:06.542: Начало операции: Решение задачи о рюкзаке (вес до 1)
+[DEBUG] 19:37:06.547: Оптимальное решение найдено: стоимость = 600, вес = 1
+[DEBUG] 19:37:06.553: Оптимальный набор:
+[DEBUG] 19:37:06.556:   - Книга: вес 1, стоимость 600
+[DEBUG] 19:37:06.562: Решение найдено, количество предметов: 1
+[DEBUG] 19:37:06.566: Операция 'Решение задачи о рюкзаке (вес до 1)' завершена за 23 мс
+[DEBUG] 19:37:09.191: Начало операции: Решение задачи о рюкзаке (вес до 4)
+[DEBUG] 19:37:09.193: Оптимальное решение найдено: стоимость = 45000, вес = 4
+[DEBUG] 19:37:09.196: Оптимальный набор:
+[DEBUG] 19:37:09.198:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 19:37:09.201:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 19:37:09.204: Решение найдено, количество предметов: 2
+[DEBUG] 19:37:09.207: Операция 'Решение задачи о рюкзаке (вес до 4)' завершена за 16 мс
+[DEBUG] 19:37:12.061: Начало операции: Решение задачи о рюкзаке (вес до 6)
+[DEBUG] 19:37:12.064: Оптимальное решение найдено: стоимость = 46100, вес = 6
+[DEBUG] 19:37:12.067: Оптимальный набор:
+[DEBUG] 19:37:12.069:   - Книга: вес 1, стоимость 600
+[DEBUG] 19:37:12.071:   - Бинокль: вес 2, стоимость 5000
+[DEBUG] 19:37:12.073:   - Ноутбук: вес 2, стоимость 40000
+[DEBUG] 19:37:12.074:   - Котелок: вес 1, стоимость 500
+[DEBUG] 19:37:12.076: Решение найдено, количество предметов: 4
+[DEBUG] 19:37:12.077: Операция 'Решение задачи о рюкзаке (вес до 6)' завершена за 16 мс
